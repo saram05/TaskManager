@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Diagnostics.Metrics;
 using System.Text.RegularExpressions;
+using TaskApp.DAL.Entities;
 
 namespace TaskManager.DAL
 {
@@ -15,11 +16,13 @@ namespace TaskManager.DAL
         }
 
         public DbSet<DAL.Entities.Group> Groups { get; set; }
+        public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<DAL.Entities.Group>().HasIndex(c => c.Name).IsUnique();
+            modelBuilder.Entity<User>().HasIndex(c => c.UserName).IsUnique();
         }
     }
 }
