@@ -4154,23 +4154,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sara.marroquin\\.nuget\\packages\\": {},
+    "C:\\Users\\heider.m.oquendo\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\repos\\ITM\\TaskMaganer\\TaskManager\\TaskManager\\TaskManager.csproj",
+      "projectUniqueName": "C:\\Proyectos\\TaskManager\\TaskManager\\TaskManager\\TaskManager.csproj",
       "projectName": "TaskManager",
-      "projectPath": "C:\\repos\\ITM\\TaskMaganer\\TaskManager\\TaskManager\\TaskManager.csproj",
-      "packagesPath": "C:\\Users\\sara.marroquin\\.nuget\\packages\\",
-      "outputPath": "C:\\repos\\ITM\\TaskMaganer\\TaskManager\\TaskManager\\obj\\",
+      "projectPath": "C:\\Proyectos\\TaskManager\\TaskManager\\TaskManager\\TaskManager.csproj",
+      "packagesPath": "C:\\Users\\heider.m.oquendo\\.nuget\\packages\\",
+      "outputPath": "C:\\Proyectos\\TaskManager\\TaskManager\\TaskManager\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\sara.marroquin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\heider.m.oquendo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4243,7 +4243,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
