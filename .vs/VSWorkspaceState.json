@@ -1,11 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\TaskManager",
-    "\\TaskManager\\TaskManager",
-    "\\TaskManager\\TaskManager\\Entities",
-    "\\TaskManager\\TaskManager\\Properties"
+    ""
   ],
-  "SelectedNode": "\\TaskManager\\TaskManager\\Entities\\Entity.cs",
+  "SelectedNode": "\\TaskManager.sln",
   "PreviewInSolutionExplorer": false
 }
