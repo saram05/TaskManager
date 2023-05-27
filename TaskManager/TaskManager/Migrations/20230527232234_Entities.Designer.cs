@@ -12,7 +12,7 @@ using TaskManager.DAL;
 namespace TaskManager.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    [Migration("20230527212048_Entities")]
+    [Migration("20230527232234_Entities")]
     partial class Entities
     {
         /// <inheritdoc />
@@ -90,14 +90,8 @@ namespace TaskManager.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime?>("CreatedDate")
-                        .HasColumnType("datetime2");
-
                     b.Property<Guid>("IdProyecto")
                         .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime?>("ModifiedDate")
-                        .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
                         .IsRequired()
