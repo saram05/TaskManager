@@ -6,9 +6,9 @@ namespace TaskManager.DAL.Entities
     {
         [Key]
         public Guid Id { get; set; }
-        public DateTime? CreatedDate { get; set; } /// <summary>
-                                                   /// el signo de interrogación significa que el campo puede ser nuleable
-                                                   /// </summary>
+        public DateTime? CreatedDate { get; set; } 
+                                                   /// ?= nuleable
+                                              
         public DateTime? ModifiedDate { get; set; }
     }
 }

@@ -190,3 +190,5 @@ C:\Proyectos\TaskManager\TaskManager\TaskManager\obj\Debug\net6.0\refint\TaskMan
 C:\Proyectos\TaskManager\TaskManager\TaskManager\obj\Debug\net6.0\TaskManager.pdb
 C:\Proyectos\TaskManager\TaskManager\TaskManager\obj\Debug\net6.0\TaskManager.genruntimeconfig.cache
 C:\Proyectos\TaskManager\TaskManager\TaskManager\obj\Debug\net6.0\ref\TaskManager.dll
+C:\Proyectos\TaskManager\TaskManager\TaskManager\bin\Debug\net6.0\LinqKit.Core.dll
+C:\Proyectos\TaskManager\TaskManager\TaskManager\bin\Debug\net6.0\LinqKit.EntityFramework.dll
