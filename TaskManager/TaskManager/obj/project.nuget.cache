@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4UylJwfc4kr0ZA2KTe9UL62UKJsZnPWz2HleVx5D+Fs6CIxn0D2mXA4SKtDG7CgOssfN1WDzqs+UEXSCxj3x6A==",
+  "dgSpecHash": "D3EfQMC72rynQi6JbKHiMb7kTdi0lz2m/6r6zMMpsUhZOVkRlHxzlNwweiFJ9IXeYgfULCwlMwls7dr+NceX/Q==",
   "success": true,
   "projectFilePath": "C:\\repos\\ITM\\TaskMaganer\\TaskManager\\TaskManager\\TaskManager.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,8 @@
     "C:\\Users\\sara.marroquin\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\sara.marroquin\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\sara.marroquin\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\sara.marroquin\\.nuget\\packages\\linqkit.core\\1.2.4\\linqkit.core.1.2.4.nupkg.sha512",
+    "C:\\Users\\sara.marroquin\\.nuget\\packages\\linqkit.entityframework\\1.2.4\\linqkit.entityframework.1.2.4.nupkg.sha512",
     "C:\\Users\\sara.marroquin\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.16\\microsoft.aspnetcore.razor.language.6.0.16.nupkg.sha512",
     "C:\\Users\\sara.marroquin\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\sara.marroquin\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

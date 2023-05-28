@@ -12,8 +12,8 @@ using TaskManager.DAL;
 namespace TaskManager.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    [Migration("20230520213833_NewEntityUser")]
-    partial class NewEntityUser
+    [Migration("20230527232234_Entities")]
+    partial class Entities
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -84,6 +84,71 @@ namespace TaskManager.Migrations
                     b.ToTable("Groups");
                 });
 
+            modelBuilder.Entity("TaskManager.DAL.Entities.ListTask", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("IdProyecto")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(45)
+                        .HasColumnType("nvarchar(45)");
+
+                    b.Property<Guid?>("ProjectId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProjectId");
+
+                    b.HasIndex("Name", "IdProyecto")
+                        .IsUnique();
+
+                    b.ToTable("ListTasks");
+                });
+
+            modelBuilder.Entity("TaskManager.DAL.Entities.Project", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(45)
+                        .HasColumnType("nvarchar(45)");
+
+                    b.Property<Guid>("IdUser")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("ModifiedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(45)
+                        .HasColumnType("nvarchar(45)");
+
+                    b.Property<Guid?>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Name")
+                        .IsUnique();
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Projects");
+                });
+
             modelBuilder.Entity("TaskApp.DAL.Entities.User", b =>
                 {
                     b.HasOne("TaskManager.DAL.Entities.Group", "Group")
@@ -95,9 +160,37 @@ namespace TaskManager.Migrations
                     b.Navigation("Group");
                 });
 
+            modelBuilder.Entity("TaskManager.DAL.Entities.ListTask", b =>
+                {
+                    b.HasOne("TaskManager.DAL.Entities.Project", "Project")
+                        .WithMany("ListTasks")
+                        .HasForeignKey("ProjectId");
+
+                    b.Navigation("Project");
+                });
+
+            modelBuilder.Entity("TaskManager.DAL.Entities.Project", b =>
+                {
+                    b.HasOne("TaskApp.DAL.Entities.User", "User")
+                        .WithMany("Projects")
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("TaskApp.DAL.Entities.User", b =>
+                {
+                    b.Navigation("Projects");
+                });
+
             modelBuilder.Entity("TaskManager.DAL.Entities.Group", b =>
                 {
                     b.Navigation("Users");
+                });
+
+            modelBuilder.Entity("TaskManager.DAL.Entities.Project", b =>
+                {
+                    b.Navigation("ListTasks");
                 });
 #pragma warning restore 612, 618
         }

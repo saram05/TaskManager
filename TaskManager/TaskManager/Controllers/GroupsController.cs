@@ -16,6 +16,7 @@ namespace TaskManager.Controllers
         {
             _context = context;
         }
+
         [HttpGet, ActionName("Get")]
         [Route("Get")]
         public async Task<ActionResult<IEnumerable<DAL.Entities.Group>>> GetGroups()

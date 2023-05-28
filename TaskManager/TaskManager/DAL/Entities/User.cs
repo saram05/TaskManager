@@ -20,5 +20,11 @@ namespace TaskApp.DAL.Entities
 
         [Display(Name = "Id grupo")]
         public Guid GroupId { get; set; }
+
+        //a user can have n project
+        public ICollection<Project> Projects { get; set; }
+
+        //read property
+        public int ProjectsNumber => Projects == null ? 0 : Projects.Count;
     }
 }
